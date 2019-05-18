@@ -4,3 +4,23 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+// Still need one more mixin!
+
+
+// Parametric Mixin
+
+.btn-mixin(@bg, @width, @radius) {
+    background-color: @bg;
+    width: @width;
+    border-radius: @radius;
+    font-size: 1.4rem;
+    font-weight: 700;
+    height: 30px;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: @bg;
+    }
+}
