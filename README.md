@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    - An adaptive website takes into consideration the sizes of different devices. They use media queries to set breakpoints, and adapt to the layout depending on the size of the screen. However, most everything is hardcoded with pixel units. This is where fully responsive websites shine. They also use media queries to set breakpoints for different devices, but all of the units are percentage based. So they adjust better to the size of the screen. This alleviates the need for a horizontal scroll bar on mobile or tablet devices.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    - When you design mobile first, you're starting your website layout on a small screen. You lay out all of the assets, and style them for a small screen. Once that is set, you work your way up to larger screen resolutions and make adjustments to the layout accordingly. Desktop first design works in reverse. You layout your site for desktop computers, and then start to adjust the layout for smaller devices working your way down.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    - What this does for us is adjusts the font size to make the math easy when we're working with 'rem' units. The default font size for most browsers is 16px. 62.5% of 16 is 10. Because of this, we can set the base size of everything to 10px, and it makes the math easy when using 'rem' units. For example, 1.5rem would be 15px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    - I would say that preprocessing makes CSS easier in a lot of ways. The way that you nest selectors within each other is similar to the way you indent code in HTML. This makes it a little more relatable, and easier to determine what level you're working on, and if things are being styled the right way. It also makes it a lot easier to write clean code, and keep things organized, so that it minimizes the amount of changes that you have to make as a codebase gets larger.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    - I really like the idea that CSS can be broken up into different files and then compiled into one master file. I can see how helpful that would be on larger projects. The concept that has given me the most trouble would be parametric mixins, but not for the reasons you would think. Conceptually they make sense, and I can implement them. But I'm having trouble seeing how they would commonly work in practice. I haven't done a project that is complicated enough for me to really benefit from them.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -102,7 +112,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [x] Main Content Styles: Use the `home-page.less` file for styling
 
 * [x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
@@ -116,7 +126,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [x] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
 * [ ] Push your changes and create a pull request if you haven't already.
 
