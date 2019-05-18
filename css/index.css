@@ -1,3 +1,7 @@
+.flexbox-setup {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +163,33 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.nav-content {
+  background-color: #F5F5F5;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.nav-content h1 {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+}
+.nav-content nav {
+  width: 35%;
+  padding: 0 5%;
+  margin-bottom: 1%;
+  margin-top: 0.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nav-content nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #000000;
 }
 footer {
   color: #22283B;
