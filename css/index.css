@@ -192,6 +192,11 @@ p {
   text-decoration: none;
   color: #000000;
 }
+@media (max-width: 500px) {
+  .nav-content nav {
+    width: 90%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -267,4 +272,42 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
+  .home .space-images .blast {
+    width: 95%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .walk {
+    flex-direction: column-reverse;
+    padding: 2.5%;
+  }
+  .home .walk .walk-img {
+    width: 95%;
+  }
+  .home .walk .walk-text {
+    width: 90%;
+    padding: 2.5%;
+  }
+  .home .walk .walk-text .btn button {
+    background-color: #00003f;
+    width: 90%;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    height: 30px;
+    color: white;
+    height: 50px;
+  }
+  .home .walk .walk-text .btn button:hover {
+    background-color: white;
+    color: #00003f;
+  }
 }
