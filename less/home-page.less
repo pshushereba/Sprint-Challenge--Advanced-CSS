@@ -91,6 +91,7 @@
     .space-images {
       .blast {
         width: 95%;
+        margin: 2.5%;
       }
 
       .sky {
@@ -104,26 +105,35 @@
 
     .walk {
       flex-direction: column-reverse;
+      width: 100%;
       padding: 2.5%;
+      margin-top: 2.5%;
 
       .walk-img {
         width: 95%;
+        padding-top: 2.5%;
+
+        img {
+          width: 95%;
+          // padding-right: 2.5%;
+        }
       }
 
       .walk-text {
-        width: 90%;
-        padding: 2.5%;
+        width: 95%;
+        padding: 4.5% 2.5% 1.5%;
         
-      .btn {
-        button {
-          .btn-mixin(#00003f, 90%, 5px);
-          height: 50px;
+        .btn {
+          
+          button {
+            .btn-mixin(#00003f, 90%, 5px);
+            height: 60px;
+            width: 100%;
+            font-weight: 700;
+          }
         }
-      }
       
       }
-
-
     }
   }
 }// home
