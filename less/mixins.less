@@ -5,7 +5,10 @@
     flex-wrap: wrap;
 }
 
-// Still need one more mixin!
+.flexbox-position(@main-axis, @cross-axis) {
+    justify-content: @main-axis;
+    align-items: @cross-axis;
+}
 
 
 // Parametric Mixin
@@ -15,7 +18,6 @@
     width: @width;
     border-radius: @radius;
     font-size: 1.4rem;
-    font-weight: 700;
     height: 30px;
     color: white;
 
