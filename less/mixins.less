@@ -1,1 +1,28 @@
 // Mixins Here
+
+.flexbox-setup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox-position(@main-axis, @cross-axis) {
+    justify-content: @main-axis;
+    align-items: @cross-axis;
+}
+
+
+// Parametric Mixin
+
+.btn-mixin(@bg, @width, @radius) {
+    background-color: @bg;
+    width: @width;
+    border-radius: @radius;
+    font-size: 1.4rem;
+    height: 30px;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: @bg;
+    }
+}

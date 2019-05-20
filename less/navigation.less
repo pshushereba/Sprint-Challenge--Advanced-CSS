@@ -1,1 +1,37 @@
 // Navigation code here
+
+.nav-content {
+    background-color: #F5F5F5;
+    height: 100px;
+    .flexbox-setup();
+    .flexbox-position(center, flex-end);
+    
+    h1 {
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        width: 35%;
+        // padding: 0 5%;
+        margin-bottom: 1%;
+        margin-top: 0.5%;
+
+        .flexbox-setup();
+        .flexbox-position(space-around, flex-end);
+
+        a {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+
+    @media @phone {
+        nav {
+            width: 90%;
+            padding: 0 5%;
+        }
+    }
+}
